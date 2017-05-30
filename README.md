@@ -1,4 +1,4 @@
-# iOS-App-Best-Practices-and-Guidelines
+# iOS App Best Practices and Guidelines
 
 ## Threading
 
