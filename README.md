@@ -1,7 +1,7 @@
 # iOS App Best Practices and Guidelines
 
 ## Table of Contents
-1. [Threading](#Threading)
+1. [Threading](#threading)
 
 ## Threading
 
