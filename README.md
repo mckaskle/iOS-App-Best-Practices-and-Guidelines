@@ -118,6 +118,21 @@ Even if the server API is well documented and there is an understood contract in
 If there is a piece of data that is not as you expect, then generally speaking the best course of action is to consider the whole task a failure. The callback that is expecting the result of the network request should receive an error. Don't try to cover up the issue with a default value or an empty list. The server is not abiding by the contract set forth in the API and this is an error that needs to be propogated up.
 
 
+### Working with JSON in Swift
+
+> Converting between representations of the same data in order to communicate between different systems is a tedious, albeit necessary, task for writing software.
+> 
+> Because the structure of these representations can be quite similar, it may be tempting to create a higher-level abstraction to automatically map between these different representations. For instance, a type might define a mapping between snake_case JSON keys and camelCase property names in order to automatically initialize a model from JSON using the Swift reflection APIs, such as Mirror.
+> 
+> However, we’ve found that these kinds of abstractions tend not to offer significant benefits over conventional usage of Swift language features, and instead make it more difficult to debug problems or handle edge cases. […] The cost of small amounts of duplication may be significantly less than picking the incorrect abstraction.
+
+Source: [Apple Swift Blog: Working with JSON in Swift](https://developer.apple.com/swift/blog/?id=37)
+
+Reflection and third party libraries that abstract serialization or deserialization of JSON should be avoided.
+
+Is is preferable to throw an error when JSON deserialization fails, as opposed to returning `nil`. See the "Writing a JSON Initializer with Error Handling" section in the previously mentioned [Working with JSON in Swift article](https://developer.apple.com/swift/blog/?id=37) for a good example of handling errors.
+
+
 ## View Controller Flow
 
 According to the [Apple documentation][dismiss-documentation]:
