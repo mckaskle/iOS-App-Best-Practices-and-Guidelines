@@ -1,5 +1,8 @@
 # iOS App Best Practices and Guidelines
 
+## Table of Contents
+1. [Threading](#Threading)
+
 ## Threading
 
 > Do everything on the main thread. Don’t even think about queues and background threads. Enjoy paradise!
