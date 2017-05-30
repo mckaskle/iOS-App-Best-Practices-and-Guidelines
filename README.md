@@ -118,7 +118,7 @@ Even if the server API is well documented and there is an understood contract in
 If there is a piece of data that is not as you expect, then generally speaking the best course of action is to consider the whole task a failure. The callback that is expecting the result of the network request should receive an error. Don't try to cover up the issue with a default value or an empty list. The server is not abiding by the contract set forth in the API and this is an error that needs to be propogated up.
 
 
-### Working with JSON in Swift
+## Working with JSON in Swift
 
 > Converting between representations of the same data in order to communicate between different systems is a tedious, albeit necessary, task for writing software.
 > 
