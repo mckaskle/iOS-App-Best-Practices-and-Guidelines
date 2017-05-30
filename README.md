@@ -2,6 +2,18 @@
 
 ## Table of Contents
 1. [Threading](#threading)
+2. [Error Handling](#error-handling)
+3. [Handling Server Responses](#handling-server-responses)
+4. [Working with JSON in Swift](#working-with-json-in-swift)
+5. [View Controller Flow](#view-controller-flow)
+6. [Dependency Injection](#dependency-injection)
+7. [Access Control](#access-control)
+8. [Localization](#localization)
+9. [Style Guide](#style-guide)
+10. [Directory Structure](#directory-structure)
+11. [Warnings](#warnings)
+12. [More Suggested Readings](#more-suggested-readings)
+
 
 ## Threading
 
@@ -232,9 +244,7 @@ The rule of thumb is to make properties and methods `private` by default and cla
 Always localize user-facing text. Use `NSLocalizedString` and the `Formatter` subclasses from the beginning. Code should not be merged into the mainline development branch until all user-facing text is localized.
 
 
-## Nitpicky Stuff
-
-### Style Guide
+## Style Guide
 
 Follow [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide#code-organization). If there are pieces of this document that contradict with the raywenderlich.com Swift Style Guide, then go with this document.
 
@@ -281,12 +291,12 @@ final class SubOperation: Operation {
 ```
 
 
-### Directory Structure
+## Directory Structure
 
 The Xcode Project navigator structure should match the underlying directory structure as much as possible. It helps if the paths of the Groups in the project navigator point to their corresponding directories within the repo.
 
 
-### No Warnings
+## Warnings
 
 If you let the project continue with even just 1 warning, you will start to become blind to the warnings panel that Xcode gives you. No code should be merged to the mainline development branch with any warnings.
 
