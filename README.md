@@ -1,3 +1,5 @@
+⚠️⚠️ **This hasn't been updated recently. There's still some good stuff in here but some is outdated. I plan to go through and update this eventually.** ⚠️⚠️
+
 # iOS App Best Practices and Guidelines
 
 ## Table of Contents
